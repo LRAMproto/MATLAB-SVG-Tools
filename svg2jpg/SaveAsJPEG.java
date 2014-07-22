@@ -8,6 +8,8 @@ public class SaveAsJPEG {
 
     public static void main(String[] args) throws Exception {
 
+	Float IMG_WIDTH = new Float(500.0);
+
         // Create a JPEG transcoder
         JPEGTranscoder t = new JPEGTranscoder();
 
@@ -15,7 +17,7 @@ public class SaveAsJPEG {
         t.addTranscodingHint(JPEGTranscoder.KEY_QUALITY,
                    new Float(1.0));
         t.addTranscodingHint(JPEGTranscoder.KEY_WIDTH,
-                   new Float(2000));
+                   new Float(IMG_WIDTH));
 
         // Create the transcoder input.
         String svgURI = new File(args[0]).toURL().toString();
