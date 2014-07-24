@@ -15,7 +15,7 @@ public class SaveAsJPEG {
 
         // Set the transcoding hints.
         t.addTranscodingHint(JPEGTranscoder.KEY_QUALITY,
-                   new Float(1.0));
+                   new Float(0.3));
         t.addTranscodingHint(JPEGTranscoder.KEY_WIDTH,
                    new Float(IMG_WIDTH));
 
